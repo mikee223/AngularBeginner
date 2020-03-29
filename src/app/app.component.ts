@@ -19,7 +19,7 @@ export class AppComponent {
   public italicClass = "text-italic";
   public clickVar: number = 0;
   public messageValue = "";
-  public ifCondition = true;
+  public ifCondition = false;
   public switchCase = "hello";
   public colors = ["red","blue","green","yellow"];
 
@@ -43,10 +43,10 @@ export class AppComponent {
   }
 
   public styleClass = {
-    color : "blue",
+    color : "pink",
     fontStyle : "italic",
     fontWeight : "bold",
-    fontFamily: "Courier New"    
+    fontFamily: "Times New Roman"
   }
 
   title = 'Mike System';
