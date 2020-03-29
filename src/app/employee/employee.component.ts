@@ -18,7 +18,7 @@ export class EmployeeComponent implements OnInit {
     this._employeeService.getEmployees_http().subscribe(data => this.employeesHttp = data);
   } 
 
-  //for git purposes only
+  //for git purposes only 2
 
 }
 
