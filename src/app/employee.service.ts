@@ -20,7 +20,7 @@ export class EmployeeService {
     ]
   }
 
-  private _url: string ="/assets/data/EmployeeList1.json";
+  private _url: string ="/assets/data/EmployeeList.json";
 
   getEmployees_http() : Observable<IEmployee[]> {
     return this.http.get<IEmployee[]>(this._url).pipe(catchError(this.errorHandler))

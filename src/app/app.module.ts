@@ -12,13 +12,15 @@ import { AppComponent } from './app.component';
 
 //services import
 import { EmployeeService } from "./employee.service";
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     // TestComponent,
     // EmployeeComponent
-    routingComponents
+    routingComponents,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
