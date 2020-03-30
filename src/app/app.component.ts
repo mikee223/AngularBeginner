@@ -65,7 +65,5 @@ export class AppComponent {
   logMessage(value) {
     this.messageValue = value    
   }
-
-
-
+  
 }
