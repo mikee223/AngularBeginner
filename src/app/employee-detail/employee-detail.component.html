@@ -1,5 +1,10 @@
 <h2>You selected {{employeeId}}</h2>
 
+<a (click)="goPrevious()">Previous</a>
+<a (click)="goNext()">Next</a>
+
+
+
 <nav>
-    <a routerLink="/employeeList">Return</a>
+    <a (click)="goBack()">Return</a>
 </nav>

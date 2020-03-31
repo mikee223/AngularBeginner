@@ -1,5 +1,5 @@
 <ul class="items">
-    <li (click)="onSelect(employee)" *ngFor="let employee of employees">
+    <li (click)="onSelect(employee)" [class.selected]="isSelected(employee)" *ngFor="let employee of employees">
         <span class="badge">{{employee.id}}</span>{{employee.name}}
     </li>
 </ul>
