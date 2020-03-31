@@ -26,9 +26,8 @@ export class EmployeeHeaderComponent implements OnInit {
   }
 
   onSelect(employee){
-    this.router.navigate(['/employeeList',employee.id])
-    // this.router.navigate(['/employeeList', {"id" :employee.id ,"name" : employee.name}])
-    // this.router.navigate(['/employeeList', { "id": employee.id, "name": employee.name }])
+    //this.router.navigate([employee.id],{relativeTo: this.route}) // route relative
+    this.router.navigate(['/employeeList',employee.id]) // route    
   }
 
   isSelected(employee){    

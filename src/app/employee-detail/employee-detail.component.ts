@@ -26,17 +26,22 @@ export class EmployeeDetailComponent implements OnInit {
 
   goPrevious() {
     let previousId = this.employeeId - 1;
-    this.router.navigate(['/employeeList',previousId]);
+    this.router.navigate(['/employeeList',previousId]); //route    
   }
 
   goNext() {
     let nextId = this.employeeId + 1;
-    this.router.navigate(['/employeeList', nextId]);
+    this.router.navigate(['/employeeList', nextId]); //route
   }
 
   goBack() {
     let selectedId = this.employeeId ?  this.employeeId : null;
-    this.router.navigate(['/employeeList', {id: selectedId}]) // optional parameter
+    // this.router.navigate(['/employeeList', {id: selectedId}]) // optional parameter
+    this.router.navigate(['../', { id: selectedId }],{relativeTo: this.route}) // optional parameter relative route
+  }
+
+  showContact(){
+    this.router.navigate(['contact'],{relativeTo: this.route}); //route        
   }
 
 }

@@ -15,6 +15,7 @@ import { EmployeeService } from "./employee.service";
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 import { EmployeeHeaderComponent } from './employee-header/employee-header.component';
+import { EmployeeContactComponent } from './employee-detail/employee-contact/employee-contact.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EmployeeHeaderComponent } from './employee-header/employee-header.compo
     routingComponents,
     PagenotfoundComponent,
     EmployeeDetailComponent,
-    EmployeeHeaderComponent
+    EmployeeHeaderComponent,
+    EmployeeContactComponent
   ],
   imports: [
     BrowserModule,
